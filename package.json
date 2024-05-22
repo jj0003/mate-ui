@@ -24,5 +24,9 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "MateUI is a comprehensive, modular UI library tailored for React developers, designed to streamline the process of building visual-ly appealing, responsive, and accessible user interfaces. This library comes equipped with a wide array of customizable compo-nents and styles, making it a versatile choice for projects of any scale. Its modularity ensures that developers can pick and choose components as needed, allowing for lightweight, tailored applica-tions.\"",
+  "main": "index.js",
+  "author": "Jan Furio",
+  "license": "MIT"
 }
