@@ -4,10 +4,8 @@ import { ComponentProps, forwardRef } from "react";
 
 const buttonStyles = cva(
   [
-    "w-full",
     "rounded-md",
     "font-semibold",
-    "focus:outline-none",
     "disabled:cursor-not-allowed",
   ],
   {
@@ -16,6 +14,7 @@ const buttonStyles = cva(
         solid: "",
         outline: "border-2",
         ghost: "transition-colors duration-300",
+        underline: "",
       },
       size: {
         sm: "px-4 py-2 text-sm",
@@ -30,18 +29,22 @@ const buttonStyles = cva(
       {
         variant: "solid",
         colorscheme: "primary",
-        className: "bg-primary-500 hover:bg-primary-600",
+        className: "bg-[#18181B] hover:bg-[#3c3c44]",
       },
       {
         variant: "outline",
         colorscheme: "primary",
-        className:
-          "text-primary-600 border-primary-500 bg-transparent hover:bg-primary-100",
+        className: "text-[#18181B] border-[#18181B] bg-transparent hover:bg-gray-100",
       },
       {
         variant: "ghost",
         colorscheme: "primary",
-        className: "text-primary-600 bg-transparent hover:bg-primary-100",
+        className: "text-[#18181B] bg-transparent hover:bg-gray-100",
+      },
+      {
+        variant: "underline",
+        colorscheme: "primary",
+        className: "text-[#18181B] hover:text-gray-500 bg-transparent hover:underline hover:underline-offset-4",
       },
     ],
     defaultVariants: {
