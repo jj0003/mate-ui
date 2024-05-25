@@ -2,30 +2,28 @@ import { forwardRef, ComponentProps } from 'react';
 import { cn } from "@/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
-const checkboxStyles = cva([
-  "h-10",
-  "w-10",
-  "rounded-lg",
+const radioStyles = cva([
+  "form-radio",
+  "h-4",
+  "w-4",
+  "text-blue-600",
   "transition",
   "duration-150",
   "ease-in-out",
-  "mr-2",
-  "focus:border-[#18181B]",
-  "focus:border-8"
-]);
+],);
 
-type CheckboxProps = ComponentProps<"input"> & VariantProps<typeof checkboxStyles> & {
+type RadioButtonProps = ComponentProps<"input"> & VariantProps<typeof radioStyles> & {
   label: string;
 };
 
-export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
+export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ label, className, ...props }, ref) => {
     return (
       <label className="inline-flex items-center">
         <input
-          type="checkbox"
+          type="radio"
           ref={ref}
-          className={cn(checkboxStyles({ className }))}
+          className={cn(radioStyles({ className }))}
           {...props}
         />
         <span className="ml-4 text-gray-700">{label}</span>
