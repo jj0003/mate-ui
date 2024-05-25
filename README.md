@@ -1,30 +1,110 @@
-# React + TypeScript + Vite
+# MateUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MateUI is a comprehensive, modular UI library tailored for React developers, designed to streamline the process of building visually appealing, responsive, and accessible user interfaces. This library comes equipped with a wide array of customizable components and styles, making it a versatile choice for projects of any scale. Its modularity ensures that developers can pick and choose components as needed, allowing for lightweight, tailored applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modular Components**: Each component can be used independently, enabling a modular and flexible design approach.
+- **Customizable Styles**: Easily customize components using props and CSS classes to match your project’s design requirements.
+- **Accessibility**: Includes proper ARIA roles and attributes to ensure your UI is accessible to all users.
+- **Responsive Design**: Components are designed to be responsive, ensuring they look great on all devices.
 
-## Expanding the ESLint configuration
+## Components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Button
+A flexible button component with various styling options.
+- **Variants**: Solid, Outline, Ghost, Underline
+- **Sizes**: Small, Medium, Large
+- **Color Schemes**: Primary, Secondary, Danger
 
-- Configure the top-level `parserOptions` property like this:
+### Checkbox
+A customizable checkbox component with text description.
+- **Variants**: Different color options for checked state
+- **Features**: Accessible, customizable label
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Accordion
+A vertically stacked set of interactive headings that each reveal a section of content.
+- **Features**: Collapsible sections, smooth transitions, customizable content
+- **Variants**: Default, Bordered
+
+### Input
+A customizable input component.
+- **Types**: Text, Password, Number, Date
+- **Features**: Accessible, customizable styles
+
+### Header
+A customizable header component.
+- **Features**: Includes navigation buttons and user greeting
+- **Variants**: Default, With background
+
+### LoginCard
+A card component for login forms.
+- **Features**: Email and password inputs, customizable submit button
+- **Variants**: Default, With background
+
+### RadioButton
+A set of customizable radio buttons with text description.
+- **Features**: Grouped options, customizable styles
+
+### Modal
+A modal dialog for user interactions.
+- **Features**: Two text fields, two input fields, and a button
+
+### Card
+A card component to display content.
+- **Features**: Displays an image, title, and paragraph with different font sizes
+
+### Dropdown
+A dropdown button that displays multiple buttons when clicked.
+- **Features**: Various options for user selection
+
+### Switch
+A toggle switch for on/off options.
+- **Features**: Customizable styles and states
+
+### ContactSection
+A pre-designed contact section.
+- **Features**: Input fields for contact information
+
+### MainSection
+A main section for general content.
+- **Features**: Flexible content display
+
+### Footer
+A customizable footer.
+- **Features**: Different layout and style options
+
+## Installation
+
+To install MateUI in your project, use npm:
+
+```bash
+npm install mateui
+```
+## Usage
+Here's a basic example of how to use the Button component in your React project:
+
+```bash
+import React from 'react';
+import { Button } from 'mateui';
+
+const App = () => {
+  return (
+    <div>
+      <Button variant="solid" size="md" colorscheme="primary">
+        Click Me
+      </Button>
+    </div>
+  );
+};
+
+export default App;
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Documentation
+For detailed usage and API documentation, visit the [MateUI Documentation](https://www.matesuite.com/mateui).
+
+## icense
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Developed with ❤️ by Jan Furio Catalan
