@@ -3,8 +3,8 @@ import { cn } from "@/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
 const checkboxStyles = cva([
-  "h-10",
-  "w-10",
+  "h-4",
+  "w-4",
   "rounded-lg",
   "transition",
   "duration-150",
