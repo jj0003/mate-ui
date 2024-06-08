@@ -23,7 +23,7 @@ const ToggleSwitch = ({ isOn, handleToggle }: ToggleSwitchProps) => {
         >
           <div
             className={`bg-white w-6 h-6 rounded-full shadow-md transform duration-300 ease-in-out ${
-              isOn ? 'translate-x-6' : ''
+              isOn ? 'translate-x-6 bg-black' : ''
             }`}
           />
         </div>
