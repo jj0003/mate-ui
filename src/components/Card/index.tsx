@@ -1,8 +1,7 @@
-import React from 'react';
 import { cn } from "@/utils";
 import { cva, VariantProps } from "class-variance-authority";
 import { ComponentProps, forwardRef } from "react";
-import { Button } from "../Button"; // Import your existing Button component
+import { Button } from "../Button";
 
 const cardStyles = cva(
   [
