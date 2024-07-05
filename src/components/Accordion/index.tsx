@@ -9,7 +9,7 @@ interface AccordionItem {
 
 interface AccordionProps {
   items: AccordionItem[];
-  variant?: 'basic' | 'withBackground' | 'withBorder' | 'withCustomColor';
+  variant?: 'basic' | 'withBackground' | 'withBorder';
 }
 
 const accordionStyles = cva(
@@ -22,7 +22,6 @@ const accordionStyles = cva(
         basic: "",
         withBackground: "bg-gray-100",
         withBorder: "",
-        withCustomColor: "",
       },
     },
     defaultVariants: {
@@ -41,7 +40,7 @@ const Accordion: React.FC<AccordionProps & VariantProps<typeof accordionStyles>>
   return (
     <div className={cn(accordionStyles({ variant }))}>
       {items.map((item, index) => (
-        <div key={index} className={`rounded-lg overflow-hidden ${variant === 'withBorder' ? 'border border-[#18181B]' : ''} ${variant === 'withCustomColor' ? 'border border-[#18181B] bg-gray-100' : ''}`}>
+        <div key={index} className={`rounded-lg overflow-hidden ${variant === 'withBorder' ? 'border border-[#18181B] bg-gray-100' : ''}`}>
           <button
             onClick={() => toggleAccordion(index)}
             className="w-full text-left ml-4 py-4 text-lg font-semibold text-[#18181B]"

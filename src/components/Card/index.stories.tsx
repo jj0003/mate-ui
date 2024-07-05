@@ -6,6 +6,11 @@ const meta: Meta<typeof Card> = {
   component: Card,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: "The Card component is a reusable component that can be used to display content in a card format. It can be customized to include different variants such as basic, with button, and with image. The image can be added as a URL.",
+      },
+    },
   },
   tags: ["autodocs"],
 };

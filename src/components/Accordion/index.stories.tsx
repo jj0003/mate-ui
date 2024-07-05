@@ -4,12 +4,20 @@ import Accordion from ".";
 const meta: Meta<typeof Accordion> = {
   title: "Components/Accordion",
   component: Accordion,
+  parameters: {
+    layout: "fullscreen",
+    docs: {
+      description: {
+        component: "The Accordion component is a reusable component that can be used to display collapsible sections of content. It can be customized to include different variants such as basic, with background, and with border.",
+      },
+    },
+  },
   tags: ["autodocs"],
 };
 
 export default meta;
 
-const Template: StoryFn<{ items: { title: string; content: React.ReactNode }[]; variant: 'basic' | 'withBackground' | 'withBorder' | 'withCustomColor' }> = (args) => <Accordion {...args} />;
+const Template: StoryFn<{ items: { title: string; content: React.ReactNode }[]; variant: 'basic' | 'withBackground' | 'withBorder' }> = (args) => <Accordion {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
@@ -39,14 +47,4 @@ WithBorder.args = {
     { title: 'Section 3', content: 'Content for section 3' },
   ],
   variant: 'withBorder',
-};
-
-export const WithCustomColor = Template.bind({});
-WithCustomColor.args = {
-  items: [
-    { title: 'Section 1', content: 'Content for section 1' },
-    { title: 'Section 2', content: 'Content for section 2' },
-    { title: 'Section 3', content: 'Content for section 3' },
-  ],
-  variant: 'withCustomColor',
 };

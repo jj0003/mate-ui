@@ -6,6 +6,11 @@ const meta: Meta<typeof Input> = {
   component: Input,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: "The Input component is a reusable input component that can be used in various parts of the application. It can be customized to include different types such as text, password, number, and date.",
+      },
+    },
   },
   tags: ["autodocs"],
 };

@@ -6,6 +6,11 @@ const meta: Meta<typeof Button> = {
   component: Button,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: "The Button component is a reusable button component that can be used in various parts of the application. It can be customized to include different colors, sizes, and variants.",
+      },
+    },
   },
   tags: ["autodocs"],
 };

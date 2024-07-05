@@ -6,6 +6,11 @@ const meta: Meta<typeof ContactSection> = {
   component: ContactSection,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: "The ContactSection component is a reusable component that can be used to display contact information. It can be customized to include different variants such as basic, with background, and with border.",
+      },
+    },
   },
   tags: ["autodocs"],
 };

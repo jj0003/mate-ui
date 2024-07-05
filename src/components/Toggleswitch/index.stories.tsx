@@ -3,9 +3,17 @@ import { Meta, StoryFn } from '@storybook/react';
 import ToggleSwitch from '.';
 
 const meta: Meta<typeof ToggleSwitch> = {
-  title: 'Components/ToggleSwitch',
+  title: "Components/ToggleSwitch",
   component: ToggleSwitch,
-  tags: ['autodocs'],
+  parameters: {
+    layout: "centered",
+    docs: {
+      description: {
+        component: "The ToggleSwitch component is a reusable component that can be used to display a toggle switch. It can be customized to include different variants such as basic, with background, and with border.",
+      },
+    },
+  },
+  tags: ["autodocs"],
 };
 
 export default meta;
