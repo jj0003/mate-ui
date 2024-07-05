@@ -18,7 +18,7 @@ export const Welcome = () => {
 
     return (
         <div style={{ margin: '0 auto', maxWidth: '960px', padding: '40px' }}>
-            <h1 style={{ fontSize: '48px', textAlign: 'center' }}>Welcome to Mate-UI</h1>
+            <h1 style={{ fontSize: '48px', textAlign: 'left' }}>Welcome to Mate-UI</h1>
             <p style={{ fontSize: '18px', lineHeight: '1.6' }}>
                 Mate-UI is a comprehensive library of UI components designed to facilitate the development of rich, interactive web applications. Crafted with attention to detail and a focus on ease of use, Mate-UI is built using React, a popular JavaScript library for building user interfaces.
             </p>
