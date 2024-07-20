@@ -6,7 +6,6 @@ MateUI is a comprehensive, modular UI library tailored for React developers, des
 
 - **Modular Components**: Each component can be used independently, enabling a modular and flexible design approach.
 - **Customizable Styles**: Easily customize components using props and CSS classes to match your project’s design requirements.
-- **Accessibility**: Includes proper ARIA roles and attributes to ensure your UI is accessible to all users.
 - **Responsive Design**: Components are designed to be responsive, ensuring they look great on all devices.
 
 ## Components
@@ -104,7 +103,7 @@ export default App;
 ## Documentation
 For detailed usage and API documentation, visit the [MateUI Documentation](https://www.matesuite.com/mateui).
 
-## icense
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Developed with ❤️ by Jan Furio Catalan

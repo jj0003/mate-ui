@@ -5,7 +5,6 @@ export * from './Checkbox';
 export * from './ContactSection';
 export * from './Footer';
 export * from './Header';
-export * from './Header';
 export * from './LoginSection';
 export * from './Radiobutton';
 export * from './Textinput';
